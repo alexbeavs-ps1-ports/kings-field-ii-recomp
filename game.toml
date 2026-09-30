@@ -1,0 +1,55 @@
+
+[game]
+name = "King's Field II"
+id = "SLUS-00255"
+players = 1
+exe = "disc/SLUS_002.55"
+disc = "disc/King's Field II (USA).cue"
+load_address = "0x80010000"
+entry_pc = "0x80010120"
+text_size = "0x00000800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "King's Field II (USA).bin"
+cue_name = "King's Field II (USA).cue"
+boot_exe = "SLUS_002.55"
+known_sizes = [571766496]
+known_md5 = [
+  "bf503b25c229ae048127a16679396d17",
+]
+known_sha1 = [
+  "131d2574f6ea101823193845f001bb58cdd3ed5e",
+]
+known_crc32 = [
+  "f8a4c585",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "King's Field II Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "c85902e6e5f04567eddf8e7aed9b4facefb269707f6a04342b7def8390d1664d"
+
+[pgo]
+enabled = false

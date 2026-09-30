@@ -1,0 +1,13 @@
+# Auto-scanned JAL targets (+ entry) from SLUS_002.55
+# entry=0x80010120 load=0x80010000 text_size=0x800
+# First-pass only — add overlay / runtime discoveries as you decomp.
+0x80010038
+0x80010118
+0x80010120
+0x800101DC
+0x800101EC
+0x800101FC
+0x8001020C
+0x8001021C
+0x8001022C
+0x8001023C
